@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Anasayfa</title>
+  <link href="./anasayfa.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="#">Ali Huseynov</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ali Huseynov</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Eğitim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Şehrim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Mirasımız</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">İlgi Alanlarım</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="login-button">Giriş Yap</a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!--navbar-->
+
+  <!--anasayfa giris-->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-image bg-img-1 active">
+
+        <div class="carousel-caption ">
+          <h5 class="animated bounceInRight" style="animation-delay: 0.5s;">First slide label</h5>
+          <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 1s;">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Necessitatibus recusandae adipisci assumenda vitae perferendis tenetur id
+            nesciunt impedit? Voluptatibus, molestias consequuntur. Possimus laboriosam vitae tempore porro soluta,
+            asperiores libero reiciendis?</p>
+          <p class="animated bounceInRight" style="animation-delay: 1.5s;"><a href="#about">Learn more</a></p>
+        </div>
+      </div>
+      <div class="carousel-item carousel-image bg-img-2">
+
+        <div class="carousel-caption">
+          <h5 class="animated bounceInRight" style="animation-delay: 0.5s;">First slide label</h5>
+          <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 1s;">Ben ve Arabalar</p>
+          <p class="animated bounceInRight" style="animation-delay: 1.5s;"><a href="#">Learn more</a></p>
+        </div>
+      </div>
+      <div class="carousel-item carousel-image bg-img-3">
+
+        <div class="carousel-caption ">
+          <h5 class="animated bounceInRight" style="animation-delay: 0.5s;">First slide label</h5>
+          <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 1s;">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Necessitatibus recusandae adipisci assumenda vitae perferendis tenetur id
+            nesciunt impedit? Voluptatibus, molestias consequuntur. Possimus laboriosam vitae tempore porro soluta,
+            asperiores libero reiciendis?</p>
+          <p class="animated bounceInRight" style="animation-delay: 1.5s;"><a href="#">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--anasayfa giris-->
+
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img"><br><br><br>
+            <img src="/sakarya-golu.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+          <div class="about-text"><br><br><br>
+            <h2>We provide best quality <br> services ever </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima quis, veniam mollitia temporibus
+              cupiditate veritatis inventore illum rem dolorum debitis, nulla eius nesciunt totam maiores delectus fuga
+              sed voluptates?
+            </p>
+            <a href="#" class="btn btn-warning">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="arabalar" class="arabalar section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2>Our services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum iste eius dolore odit autem sit et,
+              esse corporis perferendis cupiditate! Similique suscipit beatae ipsum, nulla quas numquam nesciunt totam!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
