@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Şehrim</title>
+    <link href="./sehrim.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">Ali Huseynov</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ali Huseynov</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../Anasayfa/Anasayfa.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../Egitim/egitim1.html">Eğitim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="../sehrim/sehrim.html">Şehrim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../mirasimiz/mirasimiz.html">Mirasımız</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../iletisim/iletisim.html">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="../login/login1.html" class="login-button">Giriş Yap</a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!--navbar-->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-image bg-img-1 active">
+                <img class="d-block w-100" src="../resimler/baku.jpg" alt="First slide" >
+                <div class="carousel-caption ">
+                    <h5 class="animated bounceInRight" style="animation-delay: 0.5s; color: white;">Bakü</h5>
+                    <p class="animated bounceInLeft d-none d-md-block"
+                        style="animation-delay: 1s;  font-weight: 500; color: white;">Bakü'yü tanıyalım</p>
+                    <p class="animated bounceInRight" style="animation-delay: 1.5s;"><a href="#baku">Daha çok</a></p>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image bg-img-2">
+                <img class="d-block w-100" src="../resimler/sehir_nufusu2.jpg" alt="Second slide" >
+                <div class="carousel-caption">
+                    <h5 class="animated bounceInRight" style="animation-delay: 0.5s;">Şehir Nüfusu</h5>
+                    <p class="animated bounceInLeft d-none d-md-block"
+                        style="animation-delay: 1s; font-weight: 500; color: white;">Bakü'de hangi milletler yaşıyor?
+                    </p>
+                    <p class="animated bounceInRight" style="animation-delay: 1.5s;"><a href="#nufus">Daha çok</a></p>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image bg-img-3">
+                <img class="d-block w-100" src="../resimler/deneme1.jpg" alt="Third slide" >
+                <div class="carousel-caption ">
+                    <h5 class="animated bounceInRight" style="animation-delay: 0.5s; color: white;">Gezilecek Yerler
+                    </h5>
+                    <p class="animated bounceInLeft d-none d-md-block"
+                        style="animation-delay: 1s; color: white; font-weight: 500;">Bakü'de nereleri gezebiliriz?</p>
+                    <p class="animated bounceInRight" style="animation-delay: 1.5s;"><a href="#gezilecek">Daha çok</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image bg-img-4">
+                <img class="d-block w-100" src="../resimler/nolar (1).jpg" alt="Fourth slide">
+                <div class="carousel-caption">
+                    <h5 class="animated bounceInRight" style="animation-delay: 0.5s;">Bakü'de Yaşam</h5>
+                    <p class="animated bounceInLeft d-none d-md-block"
+                        style="animation-delay: 1s; font-weight: 500; color: white;">Bakü'de hayat nasıl?</p>
+                    <p class="animated bounceInRight" style="animation-delay: 1.5s;"><a href="#yasam">Daha çok</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <section id="baku" class="baku section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5"><br><br><br><br>
+                        <h2 class="title">Bakü</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="background-color:rgb(244, 253, 253); border-radius: 8px;">
+                <div class="col-lg-4 col-md-12 col-12"><br><br>
+                    <div class="about-img">
+                        <img src="../resimler/baku6.jpg" alt="" class="img-fluid" style="border-radius: 10px; ">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2 style="font-size: 20px;">Rüzgarlar Şehri</h2>
+                        <p>
+                            Bakü, Azerbaycan'ın başkenti ve en büyük şehridir. Hazar Denizi'nin batı kıyısında yer alan
+                            Bakü, Kafkasya bölgesinin en önemli ekonomik ve kültürel merkezlerinden biridir. Tarihi ve
+                            modern yapıları, zengin kültürel mirası ve dinamik şehir yaşamıyla dikkat çeker.
+                            Son yıllarda Bakü, hızla modernleşen bir şehir olarak dikkat çekmektedir. Şehrin silüetini
+                            değiştiren en önemli yapılardan biri, Haydar Aliyev Kültür Merkezi'dir. Ünlü mimar Zaha
+                            Hadid tarafından tasarlanan bu yapı, akıcı ve dalgalı hatlarıyla modern mimarinin güzel bir
+                            örneğidir. Ayrıca, Flame Towers (Alev Kuleleri) adı verilen ve gece ışık gösterileriyle
+                            parlayan üç yüksek bina da şehrin simgelerinden biri haline gelmiştir.
+                            Bakü, aynı zamanda bir enerji merkezi olarak da bilinir. Hazar Denizi'ndeki zengin petrol ve
+                            doğalgaz rezervleri, Azerbaycan'ın ekonomisine büyük katkı sağlamaktadır. Bakü-Tiflis-Ceyhan
+                            Boru Hattı, bölgedeki enerji kaynaklarının uluslararası piyasalara taşınmasında önemli bir
+                            rol oynamaktadır. Bu boru hattı, Azerbaycan'ı küresel enerji piyasalarında stratejik bir
+                            konuma getirmiştir.
+                            Bakü, tarihi ve modern dokusunun yanı sıra dinamik şehir yaşamıyla da dikkat çeken bir
+                            başkenttir. Enerji sektöründeki stratejik önemi, zengin kültürel mirası ve modern
+                            mimarisiyle Bakü, hem ziyaretçiler hem de yatırımcılar için cazip bir destinasyon olmaya
+                            devam etmektedir. Hazar Denizi'nin kıyısında yer alan bu büyüleyici şehir, her geçen gün
+                            daha da gelişmekte ve uluslararası alanda adından söz ettirmektedir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nufus" class="nufus section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5"><br><br><br><br>
+                        <h2 class="title">Şehir Nüfusu</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="background-color: rgb(244, 253, 253); border-radius: 8px;">
+                <div class="col-lg-8 col-md-12 col-12">
+                    <div class="about-text"><br>
+                        <p>
+                            Bakü, Azerbaycan'ın en kalabalık şehri ve başkenti olarak, ülkenin siyasi, ekonomik ve
+                            kültürel merkezi konumundadır. Şehrin nüfusu, hızla artan bir trend izlemekte olup, bu durum
+                            çeşitli demografik ve sosyo-ekonomik faktörlerle ilişkilidir.<br>
+                            Bakü'nün nüfusu 2024 itibarıyla yaklaşık 2,3 milyon kişiye ulaşmıştır. Bu nüfus,
+                            Azerbaycan'ın toplam nüfusunun önemli bir kısmını oluşturur. Bakü'nün nüfus yapısı oldukça
+                            gençtir; şehrin demografik profili, doğum oranlarının yüksekliği ve genç nüfusun baskınlığı
+                            ile karakterizedir. Genç nüfus, şehrin dinamik ve enerjik bir yapıya sahip olmasını sağlar.
+                            Bakü, son yıllarda yoğun iç göç almıştır. Azerbaycan'ın diğer bölgelerinden ve kırsal
+                            alanlarından gelen insanlar, daha iyi yaşam koşulları, eğitim ve iş fırsatları arayışıyla
+                            Bakü'ye göç etmektedir. Bu durum, şehrin nüfusunun hızla artmasına ve kentsel alanların
+                            genişlemesine yol açmaktadır. Aynı zamanda, göç hareketleri, Bakü'nün kültürel çeşitliliğini
+                            artırmakta ve şehirde farklı etnik ve kültürel grupların bir arada yaşamasını sağlamaktadır.
+                            Bakü'nün nüfus artışı, ekonomik büyüme ve gelişme ile de yakından ilişkilidir. Enerji
+                            sektöründeki yatırımlar, inşaat projeleri ve hizmet sektöründeki genişleme, şehrin ekonomik
+                            çekiciliğini artırmıştır. İş imkanlarının bolluğu, genç nüfusun iş gücüne katılımını teşvik
+                            etmekte ve ekonomik büyümeyi desteklemektedir.<br>
+                            Bakü'nün nüfusu, demografik yapısı, kentsel gelişimi ve ekonomik dinamizmi ile dikkat çeken
+                            bir şehir olma özelliğini taşır. Genç ve enerjik nüfus yapısı, iç göç hareketleri ve
+                            ekonomik fırsatlar, şehrin sürekli büyümesine ve gelişmesine katkı sağlar. Bakü, bu dinamik
+                            yapısıyla gelecekte de Azerbaycan'ın en önemli şehirlerinden biri olmaya devam edecektir.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12"><br>
+                    <div class="about-img text-end">
+                        <img src="../resimler/insanlar (1).jpeg" alt="" class="img-fluid" style="border-radius: 10px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gezilecek" class="gezilecek section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5"><br><br><br><br>
+                        <h2 class="title">Gezilecek Yerler</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="background-color: rgb(244, 253, 253); border-radius: 8px;">
+                <div class="col-lg-4 col-md-12 col-12"><br><br><br><br><br>
+                    <div class="about-img">
+                        <img src="../resimler/gezmek10.jpg" alt="" class="img-fluid"
+                            style="border-radius: 10px; height: 400px;">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <p>
+                        <h4> İçerişehir (Eski Şehir)</h4>
+                        Bakü'nün kalbinde yer alan İçerişehir, UNESCO Dünya Mirası Listesi'nde yer alan tarihi bir
+                        bölgedir. Dar sokakları, taş evleri ve tarihi yapılarıyla adeta bir açık hava müzesi gibidir.
+
+                        <br> <b>Kız Kalesi (Qız Qalası):</b> 12. yüzyıldan kalma bu yapı, şehrin simgelerinden biridir.
+                        Kalenin tepesinden Bakü'nün muhteşem manzarasını izlemek mümkündür.<br>
+                        <b> Şirvanşahlar Sarayı:</b> 15. yüzyılda inşa edilen bu saray kompleksi, Şirvanşahlar
+                        Devleti'nin hükümdarlarına ev sahipliği yapmıştır. Sarayın içindeki cami, hamam ve mezarlarla
+                        zengin bir tarihe sahiptir.<br>
+                        <h4> Haydar Aliyev Kültür Merkezi</h4>
+                        Ünlü mimar Zaha Hadid tarafından tasarlanan bu modern yapı, akıcı ve dalgalı hatlarıyla dikkat
+                        çeker. Kültür merkezi, çeşitli sergilere, konserlere ve etkinliklere ev sahipliği yapar.
+                        İçerisinde bir müze, kütüphane ve konferans salonları bulunmaktadır.<br>
+                        <h4> Bakü Bulvarı</h4>
+                        Hazar Denizi kıyısında yer alan Bakü Bulvarı, yürüyüş yapmak, bisiklete binmek ve deniz
+                        manzarasının tadını çıkarmak için ideal bir yerdir. Park alanları, oyun alanları, restoranlar ve
+                        kafelerle dolu olan bu bulvar, özellikle akşam saatlerinde oldukça canlıdır.<br>
+                        <h4> Ateşgah (Ateş Tapınağı)</h4>
+                        Bakü'nün biraz dışında, Surakhani kasabasında yer alan Ateşgah, Zerdüşt inancının önemli bir
+                        mabedidir. 17. ve 18. yüzyıllarda inşa edilen bu tapınak kompleksi, eski zamanlarda doğal gaz
+                        kaynaklarından yükselen alevlerle ünlüdür. Günümüzde, Ateşgah turistik bir çekim merkezi olup,
+                        ziyaretçilere dini ve kültürel tarih hakkında bilgi sunar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="yasam" class="yasam section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5"><br><br><br><br>
+                        <h2 class="title">Bakü'de Yaşam</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="background-color: rgb(244, 253, 253); border-radius: 8px;">
+                <div class="col-lg-8 col-md-12 col-12">
+                    <div class="about-text"><br>
+                        <p>
+                        <h4>Konut ve Yaşam Alanları</h4>
+                        Bakü'de konut seçenekleri oldukça çeşitlidir. Şehir merkezinde modern apartmanlar, yüksek
+                        binalar ve lüks rezidanslar bulunurken, daha geleneksel evler ve daireler de mevcuttur.
+                        İçerişehir gibi tarihi bölgelerde oturmak, tarihi dokuyu hissetmek isteyenler için ideal bir
+                        seçenektir. Kiralar ve ev fiyatları, bölgeye ve evin özelliklerine göre değişiklik
+                        göstermektedir. Şehir merkezinde ve modern binalarda kiralar genellikle daha yüksek seviyededir.
+                        <br>
+                        <h4>Ulaşım</h4>
+                        Bakü'de ulaşım altyapısı oldukça gelişmiştir. Şehir içi ulaşımda metro, otobüs, tramvay ve taksi
+                        gibi çeşitli seçenekler bulunur. Metro ağı, şehrin birçok noktasına hızlı ve ekonomik bir
+                        şekilde ulaşmayı sağlar. Bakü'nün trafik yoğunluğu, özellikle iş saatlerinde artmaktadır, ancak
+                        toplu taşıma sisteminin etkinliği bu durumu hafifletmektedir. Ayrıca, Bakü Kart adı verilen bir
+                        toplu taşıma kartı ile otobüs ve metroda kolayca seyahat edilebilir.<br>
+                        <h4>Kültür ve Eğlence</h4>
+                        Bakü, kültürel etkinlikler ve eğlence olanakları bakımından zengin bir şehir. Şehirde yıl
+                        boyunca birçok festival, konser, tiyatro gösterisi ve sanat sergisi düzenlenir. Bakü Filarmoni
+                        Orkestrası ve Azerbaycan Devlet Opera ve Bale Tiyatrosu, klasik müzik ve sahne sanatları
+                        severler için önemli mekanlardır. Alışveriş merkezleri, sinemalar, restoranlar ve kafeler de
+                        şehirdeki sosyal yaşamın önemli parçalarıdır. Bakü Bulvarı, hem yerel halkın hem de turistlerin
+                        vakit geçirdiği popüler bir sahil şerididir.<br>
+                        <h4>Ekonomi ve İş Olanakları</h4>
+                        Bakü, Azerbaycan'ın ekonomik merkezi olarak, birçok iş ve kariyer fırsatı sunar. Enerji sektörü,
+                        özellikle petrol ve doğalgaz endüstrisi, şehrin ekonomisinde önemli bir rol oynamaktadır.
+                        Ayrıca, inşaat, bankacılık, telekomünikasyon ve turizm gibi diğer sektörler de hızla
+                        gelişmektedir. Yabancı yatırımcılar ve iş insanları için Bakü, birçok iş fırsatı ve potansiyel
+                        sunar.
+                        <br>
+                        <h4>Sosyal Yaşam ve Güvenlik</h4>
+                        Bakü, genellikle güvenli bir şehir olarak kabul edilir. Suç oranları düşüktür ve şehirde hem
+                        yerel halk hem de yabancılar için güvenli bir yaşam ortamı bulunmaktadır. Yerel halk
+                        misafirperverdir ve yabancılara karşı hoşgörülüdür. Bakü'de sosyal yaşam oldukça aktiftir;
+                        restoranlar, kafeler ve barlar her zaman canlıdır. Özellikle yaz aylarında sahil boyunca
+                        düzenlenen etkinlikler ve açık hava konserleri, şehre ayrı bir dinamizm katmaktadır.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img text-end">
+                        <img src="../resimler/yasam2.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+                    </div><br>
+                    <div class="about-img text-end">
+                        <img src="../resimler/yasam4.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <br><br><br><br>
+    <footer class="bg-dark py-5 mt-5">
+        <div class="container text-light text-center">
+            <p class="display-5 mb-3">Ali Huseynov</p>
+            <small class="text-white-50">&copy; 2024 Ali Huseynov | Tüm Hakları Saklıdır.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
