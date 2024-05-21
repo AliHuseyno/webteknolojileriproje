@@ -22,24 +22,24 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/Anasayfa/Anasayfa.html">Anasayfa</a>
+                    <a class="nav-link mx-lg-2" href="../Anasayfa/Anasayfa.html">Anasayfa</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/Egitim/egitim1.html">Eğitim</a>
+                    <a class="nav-link mx-lg-2" href="../Egitim/egitim1.html">Eğitim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/sehrim/sehrim.html">Şehrim</a>
+                    <a class="nav-link mx-lg-2" href="../sehrim/sehrim.html">Şehrim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="/mirasimiz/mirasimiz.html">Mirasımız</a>
+                    <a class="nav-link mx-lg-2" href="../mirasimiz/mirasimiz.html">Mirasımız</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2 active" aria-current="page" href="/iletisim/iletisim.html">İletişim</a>
+                    <a class="nav-link mx-lg-2 active" aria-current="page" href="../iletisim/iletisim.html">İletişim</a>
                   </li>
               </ul>
             </div>
           </div>
-          <a href="/login/login1.html" class="login-button">Giriş Yap</a>
+          <a href="../login/login1.html" class="login-button">Giriş Yap</a>
           <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -79,6 +79,34 @@
         </div>
     </div>
 
+    <script>
+      function validateForm() {
+          var isim = document.getElementById('isim').value;
+          var email = document.getElementById('email').value;
+          var konu = document.getElementById('Mesaj').value;  
+          if (isim === "") {
+              alert("Adınızı giriniz.");
+              return false;
+          }
+
+          if (email === "") {
+              alert("E-posta adresinizi giriniz.");
+              return false;
+          }
   
+          if (!emailPattern.test(email)) {
+              alert("Lütfen geçerli bir email adresi giriniz.");
+              return false;
+          }
+  
+          if (konu === "") {
+              alert("Mesajınızı yazınız.");
+              return false;
+          }
+  
+          return true;
+      }
+  </script>
+
 </body>
 </html>
